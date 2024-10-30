@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // To handle form submission
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
 
-mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.e1efv.mongodb.net/insta_login`, {
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.e1efv.mongodb.net/insta_loginDB`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
